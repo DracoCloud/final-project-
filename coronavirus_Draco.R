@@ -6,7 +6,6 @@ library_names <- c(
   "rvest",
   "DT",
   "dplyr",
-  "tidycovid19",
   "shiny",
   "tidyverse",
   "plotly",
@@ -15,6 +14,15 @@ library_names <- c(
 lapply(library_names, require, character.only = TRUE)
 
 # obtain data from API
+library(httr)
+library(jsonlite)
+library(rvest)
+library(DT)
+library(dplyr)
+library(shiny)
+library(tidyverse)
+library(plotly)
+library(ggplot2)
 
 country_list <-
   c("china",
